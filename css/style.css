@@ -1,0 +1,105 @@
+
+/* fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+
+
+
+
+:root {
+    --cor-de-fundo: #FFFFFF;
+    --cor-principal: #690606;
+    --cor-da-noticia: #CDC8C8;
+    --cor-do-leia: #D80000;
+    --cor-do-rotape: #362E2E;
+    --cor-da-letra-destaque: #FFFFFF;
+    --cor-da-letra-preta: #000000;
+    --cor-da-letra-letrota: #B3A6A6;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    width: 100%;
+
+
+}
+
+nav {
+    background-color: var(--cor-principal);
+    position: fixed;
+    width: 100%;
+    color: var(--cor-da-letra-destaque);
+    padding: 1.0rem 4rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    
+
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-da-letra-destaque);
+
+}
+
+nav h1 {
+    font-size: 45px;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.25rem;
+    font-size: 30px;
+    
+}
+
+nav li {
+
+    padding: 0.5rem;
+}
+
+.menu a {
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    border: solid 1px yellow;
+}
+
+.menu a:hover {
+    color: var(--cor-do-leia);
+
+
+}
+
+/* logo leo days */
+
+nav h2 {
+
+
+}
+
+/* logo do by */
+nav span {
+
+}
