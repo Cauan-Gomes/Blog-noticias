@@ -158,7 +158,7 @@ article:hover {
 .foto {
     overflow: hidden;
     margin-right: 1rem; 
-    /* border: solid red; */
+    border: solid red;
     border-radius: 0.625rem;
   
 
@@ -166,6 +166,7 @@ article:hover {
 
 .foto img {
     height: 100%;
+    width: 100%;
 
 
 }
@@ -174,6 +175,7 @@ article:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: solid red;
 }
 
 footer {
