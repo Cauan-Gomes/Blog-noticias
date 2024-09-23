@@ -1,9 +1,8 @@
 
 /* fontes */
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
 
 
 
@@ -46,7 +45,7 @@ nav {
     top: 0;
     width: 100%;
     color: var(--cor-da-letra-destaque);
-    padding: 0.8rem 4rem;
+    padding: 0.8rem 3.8rem;
     
     display: flex;
     flex-direction: row;
@@ -60,6 +59,7 @@ nav {
 nav a {
     text-decoration: none;
     color: var(--cor-da-letra-destaque);
+    
 
 }
 
@@ -67,6 +67,7 @@ nav h1 {
     font-size: 45px;
     font-weight: 700;
     padding: 1rem;
+    font-family: "Josefin Slab", serif;
 }
 
 nav ul {
@@ -74,6 +75,7 @@ nav ul {
     display: flex;
     gap: 1.25rem;
     font-size: 30px;
+    padding-bottom: 0.5rem;
     
 }
 
@@ -108,6 +110,16 @@ nav span {
 
 }
 
+article h3 {
+    font-family: "Holtwood One SC", serif;
+}
+
+.menu-responsivo {
+    color: var(--cor-da-letra-destaque);
+    font-size: 4rem;
+    /* display: none; */
+}
+
 main {
     margin: 3.5rem auto;
     padding: 5.0rem 4rem;
@@ -129,6 +141,7 @@ article {
 
     
 }
+
 
 article p{
     margin-top: 1rem;
@@ -157,8 +170,8 @@ article:hover {
 
 .foto {
     overflow: hidden;
-    margin-right: 1rem; 
-    border: solid red;
+    margin-right: 0; 
+    /* border: solid red; */
     border-radius: 0.625rem;
   
 
@@ -175,7 +188,8 @@ article:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: solid red;
+    /* border: solid red; */
+    /* align-items: center; */
 }
 
 footer {
@@ -187,4 +201,92 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* ===== midia queries ===== */
+
+/* SM Small - smartphone landscape (paisagem) */
+@media (min-width: 25rem) { /* a partir de 400px */
+    nav {
+        padding: 0.5rem 1rem;
+    }
+    
+    .menu {
+        display: none;
+    }
+    .menu-responsivo {
+        display: block;
+    }
+    article {
+        margin: 0 0.5rem 1rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .foto {
+        overflow: visible;
+        margin-right: 0;
+    }
+    
+    .foto img {
+        width: 100%;
+    }
+    /* TESTE */
+    /* nav {
+        background-color: #149ddc;
+    } */
+}
+/* Tablet */
+@media (min-width: 36rem) { /* a partir 576px */
+    nav {
+        padding: 0.5rem 2rem;
+    }
+    article {
+        margin: 0 2rem 1rem;
+    }
+    /* TESTE */
+    /* nav {
+        background-color: #fbb40e;
+    } */
+}
+/* Notebook */
+@media (min-width: 48rem) /*and (max-width: 62rem)*/ { /* a partir 768px */
+    .menu {
+        display: block;
+    }
+    .menu-responsivo {
+        display: none;
+    }
+    
+    nav {
+        padding: 1.2rem 5rem;
+    }
+    article {
+        margin: 0 5rem 1rem;
+        height: 16rem;
+        display: grid;
+        grid-template-columns: 16rem auto;
+    }
+    .foto {
+        overflow: hidden;
+        margin-right: 1rem;
+    }
+    
+    .foto img {
+        height: 100%;
+    }
+    /* TESTE */
+    /* nav {
+        background-color: #00a51e;
+    } */
+}
+/* Desktop */
+@media (min-width: 62rem) { /* a partir 992px */
+    article {
+        max-width: 75rem; /* 1200px */
+    }
+    /* TESTE */
+    /* nav {
+        background-color: #38493b;
+    } */
 }
